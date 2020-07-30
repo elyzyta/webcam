@@ -1,1 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+
+.title-welcome {
+  font-size: 2.6rem;
+  color: #00549C;
+}
+
+
+.btn-gral {
+  width: 385px;
+  height: 75px;
+  border-radius: 36px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.btn-gral.red {
+  background-color: #C61B1A;
+}
+
+.btn-gral.blue {
+  background-color: #10529B;
+}
+
+.box-scan {
+  height: 500px !important;
+  width: 660px !important;
+  border: 10px solid #10529B;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.text-blue {
+  color: #10529B;
+}
+
+.text-grey {
+  color: grey;
+}
+
+.box-list {
+  width: 700px;
+  height: auto;
+  padding-bottom: 2rem;
+  max-height: 260px;
+  border: 2px solid #10529B;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.scroll-scan {
+  max-height: 180px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* En caso de querer rotar la imagen */
+/* video {
+  -webkit-transform: rotate(-90deg) !important;
+  -webkit-transform-origin: 50% 50% !important;
+  transform: rotate(-90deg) !important;
+  transform-origin: 50% 50% !important;
+  zoom: 38%;
+  margin-top: 15%;
+  margin-left: -18%;
+} */
+
+
+
+
