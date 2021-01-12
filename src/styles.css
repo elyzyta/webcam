@@ -56,8 +56,15 @@
   overflow-x: hidden;
 }
 
+.p-absolute-loading {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 30%;
+}
+
 /* En caso de querer rotar la imagen */
-/* video {
+/* .video {
   -webkit-transform: rotate(-90deg) !important;
   -webkit-transform-origin: 50% 50% !important;
   transform: rotate(-90deg) !important;
@@ -66,7 +73,3 @@
   margin-top: 15%;
   margin-left: -18%;
 } */
-
-
-
-

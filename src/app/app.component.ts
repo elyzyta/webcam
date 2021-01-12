@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import * as Webcam from 'webcamjs';
 
 @Component({
@@ -11,7 +11,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.activateWebCam();
   }
 
@@ -19,7 +19,7 @@ export class AppComponent implements OnInit, OnDestroy {
     Webcam.reset();
   }
 
-  async activateWebCam() {
+  async activateWebCam(): Promise<void> {
     Webcam.set({
       width: 640,
       height: 480,
@@ -35,11 +35,11 @@ export class AppComponent implements OnInit, OnDestroy {
     const canvas = document.getElementById('canvasPhoto') as HTMLCanvasElement;
     const video = Webcam.container.childNodes[1];
 
-    canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+    canvas.getContext('2d')?.drawImage(video, 0, 0, canvas.width, canvas.height);
     this.setImages(canvas.toDataURL('image/jpeg'));
   }
 
-  setImages(img) {
+  setImages(img: string): void  {
     const snapshot = img.slice(23);
     this.snapshots.push(snapshot);
   }
